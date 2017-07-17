@@ -1,0 +1,50 @@
+body {
+  margin: 40px;
+  text-align: center;
+  background: #2F3A64;
+  transition: all .3s;
+  color: #fff; }
+  @media screen and (min-width: 900px) {
+    body {
+      margin: 40px 150px; } }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column: 1;
+  grid-gap: 1px;
+  background-color: #F5AC80;
+  border: 1px solid #F5AC80;
+  color: #444;
+  transition: all .3s; }
+  @media (min-width: 540px) {
+    .wrapper.panel-count-even {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: 2; } }
+  @media (min-width: 540px) and (max-width: 768px) {
+    .wrapper.panel-count-odd {
+      grid-template-columns: repeat(2, 1fr); }
+      .wrapper.panel-count-odd :nth-child(3n) {
+        grid-column: 1 / span 2; } }
+  @media (min-width: 769px) {
+    .wrapper.panel-count-odd {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 540px) and (max-width: 768px) {
+    .wrapper.panel-count-5 {
+      grid-template-columns: repeat(2, 1fr); }
+      .wrapper.panel-count-5 :nth-child(5n) {
+        grid-column: 1 / span 2; } }
+  @media (min-width: 769px) {
+    .wrapper.panel-count-5 {
+      grid-template-columns: repeat(12, 1fr); }
+      .wrapper.panel-count-5 :nth-child(-n+2) {
+        grid-column: span 6; }
+      .wrapper.panel-count-5 :nth-child(n+3) {
+        grid-column: span 4; } }
+
+.box {
+  background-color: #0C000A;
+  color: #F5AC80;
+  padding: 100px 50px;
+  font-size: 200%;
+  transition: all .3s; }
