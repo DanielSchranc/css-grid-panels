@@ -13,9 +13,9 @@ body {
   grid-template-columns: 100%;
   grid-column: 1;
   grid-gap: 1px;
+  overflow: hidden;
   background-color: #F5AC80;
   border: 1px solid #F5AC80;
-  color: #444;
   transition: all .3s; }
   @media (min-width: 540px) {
     .wrapper.panel-count-even {
@@ -43,8 +43,30 @@ body {
         grid-column: span 4; } }
 
 .box {
+  position: relative;
+  text-align: left;
   background-color: #0C000A;
-  color: #F5AC80;
-  padding: 100px 50px;
-  font-size: 200%;
+  background-image: url("http://assets.volvocars.com/uk/~/media/shared-assets/master/images/story-telling/volvo-on-call/16_9_volvo_on_call_1.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 150px 50px;
+  font-size: 100%;
   transition: all .3s; }
+  @media (min-width: 540px) and (max-width: 768px) {
+    .box {
+      padding: 200px 50px; } }
+  @media (min-width: 769px) {
+    .box {
+      padding: 250px 50px; } }
+
+.text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+  .text h2 {
+    font-weight: 100; }
+  .text p {
+    font-weight: 100;
+    color: #fff; }
