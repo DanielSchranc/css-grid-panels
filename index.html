@@ -5,121 +5,21 @@
     <meta charset="UTF-8">
     <title>Panels Layout Module</title>
     <meta name="viewport" content="width=device-width">
+    <!-- CSS -->
     <link rel="stylesheet" href="build/css/grid.css">
 </head>
 
-<body>
-    <h1>{ One item }</h1>
-    <div class="wrapper">
-        <div class="box a">
-            <div class="text">
-                <h2>Cupcake ipsum dolor</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon. Halvah chocolate jelly beans tootsie roll. </p>
-            </div>
-        </div>
-    </div>
-    <h1>{ Two items }</h1>
-    <div class="wrapper panel-count-even">
-        <div class="box a">
-            <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon.</p>
-            </div>
-        </div>
-        <div class="box b">
-            <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Muffin topping halvah gingerbread tootsie roll sesame snaps macaroon.</p>
-            </div>
-        </div>
-    </div>
-    <h1>{ Three items }</h1>
-    <div class="wrapper panel-count-odd">
-        <div class="box a">
-            <div class="text">
-                <h2>Cupcake ipsum dolor</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon. Halvah chocolate jelly beans tootsie roll. </p>
-            </div>
-        </div>
-        <div class="box b">
-            <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon.</p>
-            </div>
-        </div>
-        <div class="box c">
-             <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Muffin topping halvah gingerbread tootsie roll sesame snaps macaroon.</p>
-            </div>
-        </div>
-    </div>
-    <h1>{ Four items }</h1>
-    <div class="wrapper panel-count-even">
-        <div class="box a">
-            <div class="text">
-                <h2>Cupcake ipsum dolor</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon. Halvah chocolate jelly beans tootsie roll. </p>
-            </div>
-        </div>
-        <div class="box b">
-            <div class="text">
-                <h2>Cupcake ipsum dolor</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon. Halvah chocolate jelly beans tootsie roll. </p>
-            </div>
-        </div>
-        <div class="box c">
-            <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Cake danish halvah macaroon donut donut bonbon.</p>
-            </div>
-        </div>
-        <div class="box d">
-            <div class="text">
-                <h2>Panels Layout Hero Module</h2>
-                <p>Muffin topping halvah gingerbread tootsie roll sesame snaps macaroon.</p>
-            </div>
-        </div>
-    </div>
-    <h1>{ Five items }</h1>
-    <div class="wrapper panel-count-5">
-        <div class="box a">
-            <p>A</p>
-        </div>
-        <div class="box b">
-            <p>B</p>
-        </div>
-        <div class="box c">
-            <p>C</p>
-        </div>
-        <div class="box d">
-            <p>D</p>
-        </div>
-        <div class="box e">
-            <p>E</p>
-        </div>
-    </div>
-    <h1>{ Six items }</h1>
-    <div class="wrapper panel-count-odd">
-        <div class="box a">
-            <p>A</p>
-        </div>
-        <div class="box b">
-            <p>B</p>
-        </div>
-        <div class="box c">
-            <p>C</p>
-        </div>
-        <div class="box d">
-            <p>D</p>
-        </div>
-        <div class="box e">
-            <p>E</p>
-        </div>
-        <div class="box f">
-            <p>F</p>
-        </div>
-    </div>
+<body ng-app='app'>
+    <panels-component></panels-component>
+
+    <!-- JS -->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/panels.service.js"></script>
+    <script src="js/components/panels.component.js"></script>
+    <script src="js/components/panels.controller.js"></script>
+    <script src="js/get-child-count.directive.js"></script>
+    
 </body>
 
 </html>

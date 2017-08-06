@@ -1,0 +1,18 @@
+<div 
+  ng-repeat="panel in $ctrl.panels">
+  <h1>{ {{panel.mainTitle }} }</h1>
+    <div 
+      class="wrapper" 
+      get-child-count 
+      child-count="{{panel.items.length}}">
+        <div 
+          class="box" 
+          ng-style="{'background-image': 'url( {{item.image}} )'}" ng-repeat="item in panel.items">
+            <div class="text">
+                <h2>{{ item.subTitle }}</h2>
+                <p>{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
